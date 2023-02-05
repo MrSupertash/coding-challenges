@@ -38,7 +38,7 @@ let mary = { name: "Mary", surname: "Key", id: 3 };
 let users = [ john, pete, mary ];
 
 
-// my initial solution didn't work as it didn't use parentheses around the object literal within the arrow function. I had to look up the solution. I didn't understand why they are needed here, since the object is just "one thing", but I guess if I leave the parentheses out, the curly brackets that define the scope of the object will be mistaken for the function body of the arrow function.
+// my initial solution didn't work as it didn't use parentheses around the object literal within the arrow function. I had to look up the solution. I didn't understand why they are needed here, since the object is just "one thing", but I guess if I leave the parentheses out, the curly braces that define the object literal will be mistaken for the function body of the arrow function.
 
 // indeed the MDN for arrow function expressions:
 // Returning object literals using the concise body syntax (params) => { object: literal } does not work as expected.
