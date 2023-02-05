@@ -43,6 +43,7 @@
 
 
 // Solution part 1 - refactored
+// I looked at the solution after my first attempt and was pretty much overwhelmed by the answer and tried to understand it. This was two days ago. I implemented the following from what I had understood/remembered, without looking at the solution again. What is still not clear to me is why I can pass arguments into the VALUE that is stored in the methods objects to execute the arrow function there. I accept it for now, though and make a note that this is possible.
 
 // function Calculator() {
 //     this.methods = {
@@ -90,7 +91,7 @@ function Calculator() {
         '-': (a, b) => a - b,
     };
 
-    this.calculate = function (str) {
+    this.calculate = function(str) {
         let split = str.split(' ');
         let num1 = Number(split[0]);
         let op = split[1];
@@ -103,7 +104,7 @@ function Calculator() {
         }
     };
 
-    this.addMethod = function (name, func) {
+    this.addMethod = function(name, func) {
         this.methods[name] = func;
     }
 }
